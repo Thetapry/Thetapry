@@ -1,16 +1,21 @@
-### Hi there 👋
+# Thetapry
+&nbsp;
+## _一個簡單、網頁的音樂遊戲_
+&nbsp;
 
-<!--
-**Thetapry/Thetapry** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 為什麼要做這個?
 
-Here are some ideas to get you started:
+簡單的來說，這是我們的自主學習專案。
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 特色
+
+- 輕鬆簡單、偏向新手
+- 玩法新穎
+- 網頁式、無須安裝
+
+## 銘謝
+
+| Library | Github Link |
+| ------ | ------ |
+| Howler | https://github.com/goldfire/howler.js/ |
+

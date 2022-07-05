@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.full-page {
+  width: 100vw;
+  height: 100vh;
+}
+
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.Visible {
+  pointer-events: fill;
+  opacity: 1;
+}
+
+.Invisible {
+  pointer-events: none;
+  opacity: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes flicker {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes flicker-mid {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes AuthorsBTNRight {
+  0% {
+    transform: translateX(0px) translateY(-20vh);
+  }
+  100% {
+    transform: translateX(100%) translateY(-20vh);
+  }
+}
+@keyframes AuthorsBTNLeft {
+  0% {
+    transform: translateX(100%) translateY(-20vh);
+  }
+  100% {
+    transform: translateX(0px) translateY(-20vh);
+  }
+}
+@keyframes SettingsBTNRight {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes SettingsBTNLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.transition-duration-0-3s {
+  transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+}
+
+.transition-duration-1s {
+  transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  -o-transition-duration: 1s;
+}
+
+.transition-duration-1-3s {
+  transition-duration: 1.3s;
+  -moz-transition-duration: 1.3s;
+  -webkit-transition-duration: 1.3s;
+  -o-transition-duration: 1.3s;
+}
+
+.transition-duration-1-5s {
+  transition-duration: 1.5s;
+  -moz-transition-duration: 1.5s;
+  -webkit-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+}
+
+/*# sourceMappingURL=theme.css.map */
