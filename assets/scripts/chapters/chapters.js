@@ -71,7 +71,7 @@ const chapters = {
             (870 - (chapter_1.getBoundingClientRect().width / 2)) + "px" :
             chapter_1_img.getBoundingClientRect().width - chapter_1.getBoundingClientRect().width - 10 + "px";
         chapter_2_img.style.right = Math.max(0, (230 - (chapter_2.getBoundingClientRect().width / 2))) + "px";
-        chapter_3_img.style.right = (450 - (chapter_3.getBoundingClientRect().width / 2)) + "px";
+        chapter_3_img.style.right = Math.max(800 - (chapter_3.getBoundingClientRect().width / 3)) + "px";
         chapter_1_img.style.bottom = Math.max(65, (methods.getScreenHeight() / 2) - chapter_1.getBoundingClientRect().height - 100) + "px";
         chapter_2_img.style.bottom = Math.max(0, (methods.getScreenHeight() / 2) - chapter_2.getBoundingClientRect().height - 200) + "px";
         chapter_3_img.style.bottom = Math.max(50, (methods.getScreenHeight() / 2) - chapter_3.getBoundingClientRect().height - 150) + "px";

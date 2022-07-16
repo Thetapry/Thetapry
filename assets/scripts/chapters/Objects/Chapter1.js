@@ -103,7 +103,7 @@ const Chapter1 = {
 			//右方生成 逆時針(CCW)移動 1s
     moveLeftCCWOneSec(note) {
          if (note.circleRadius !== undefined) {
-            if (note.circleRadius >  0) {
+            if (note.circleRadius >  16.66) {
                 note.circleRadius -= 16.66;
             } else {
                 note.circleRadius =  0;
@@ -125,7 +125,7 @@ const Chapter1 = {
 			//左方生成 逆時針(CCW)移動 1s
     moveRightCCWOneSec(note) {
          if (note.circleRadius !== undefined) {
-            if (note.circleRadius >  0) {
+            if (note.circleRadius >  16.66) {
                 note.circleRadius -= 16.66;
             } else {
                 note.circleRadius =  0;
@@ -147,7 +147,7 @@ const Chapter1 = {
 			//上方生成 逆時針(CCW)移動 1s
     moveDownCCWOneSec(note) {
          if (note.circleRadius !== undefined) {
-            if (note.circleRadius >  0) {
+            if (note.circleRadius >  16.66) {
                 note.circleRadius -= 16.66;
             } else {
                 note.circleRadius =  0;
@@ -169,7 +169,7 @@ const Chapter1 = {
 			//下方生成 逆時針(CCW)移動 1s
     moveUpCCWOneSec(note) {
          if (note.circleRadius !== undefined) {
-            if (note.circleRadius >  0) {
+            if (note.circleRadius >  16.66) {
                 note.circleRadius -= 16.66;
             } else {
                 note.circleRadius =  0;
@@ -192,7 +192,7 @@ const Chapter1 = {
 				//右方生成 順時針(CW)移動 1s
      moveLeftCWOneSec(note) {
          if (note.circleRadius !== undefined) {
-            if (note.circleRadius >  0) {
+            if (note.circleRadius >  16.66) {
                 note.circleRadius -= 16.66;
             } else {
                 note.circleRadius =  0;
@@ -214,7 +214,7 @@ const Chapter1 = {
 				//左方生成 順時針(CW)移動 1s
     moveRightCWOneSec(note) {
          if (note.circleRadius !== undefined) {
-            if (note.circleRadius >  0) {
+            if (note.circleRadius >  16.66) {
                 note.circleRadius -= 16.66;
             } else {
                 note.circleRadius =  0;
@@ -236,7 +236,7 @@ const Chapter1 = {
 				//上方生成 順時針(CW)移動 1s
     moveDownCWOneSec(note) {
          if (note.circleRadius !== undefined) {
-            if (note.circleRadius >  0) {
+            if (note.circleRadius >  16.66) {
                 note.circleRadius -= 16.66;
             } else {
                 note.circleRadius =  0;
@@ -258,7 +258,7 @@ const Chapter1 = {
 				//下方生成 順時針(CW)移動 1s
     moveUpCWOneSec(note) {
          if (note.circleRadius !== undefined) {
-            if (note.circleRadius >  0) {
+            if (note.circleRadius >  16.66) {
                 note.circleRadius -= 16.66;
             } else {
                 note.circleRadius =  0;
@@ -330,7 +330,7 @@ const Chapter1 = {
 		game.canvas.createTapNote(10166, 0, this.moveLeftOneSec); //36
 	},
 	2:function(game){
-		game.startPlayMusic();
+		setTimeout(function() {game.startPlayMusic();}, 148);
 	},
 	7:function(game){
 		game.canvas.rotate(360, 4);

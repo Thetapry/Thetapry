@@ -2,7 +2,7 @@ const welcomePage = {
     starAnimationInterval: undefined,
 
     starAnimation: function () {
-        const glowing_star_color_list = ["purple-glowing-star", "white-glowing-star", "pink-glowing-star"];
+        const glowing_star_color_list = ["purple-glowing-star", "white-glowing-star", "pink-glowing-star"]
 
         welcomePage.starAnimationInterval = setInterval(() => {
             if (welcome_page.classList.contains("Visible")) {

@@ -29,7 +29,7 @@ const soundsManager = {
     }),
 
     chapter3: new Howl({
-        src: ["./assets/sounds/FREEDOM_DiVE_game_ver.mp3"],
+        src: ["./assets/sounds/Chronostasis.mp3"],
         volume: 0,
         sprite: {
             inGame: [0, 145000, false],

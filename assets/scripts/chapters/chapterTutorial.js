@@ -1,5 +1,5 @@
 const chapterTutorial = {
-    played: false,
+    played: true,
 
     init: function () {
         let tutorialHintText = document.createElement('h1');

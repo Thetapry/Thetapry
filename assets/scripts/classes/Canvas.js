@@ -13,8 +13,8 @@ class Canvas {
         this._rotate = 0;
         this._stop = false;
         this._maxCheckDistance = 100;
-        this._perfectDistance = 40;
-        this._goodDistance = 100;
+        this._perfectDistance = 50;
+        this._goodDistance = 80;
     }
 
     start() {
@@ -82,7 +82,7 @@ class Canvas {
                         if (distance === 0) {
                             if (tapNote.centerTime >= 0) {
                                 // distance == 0 and wait 0.1 seconds(6 frames)
-                                if (tapNote.centerTime >= 6) {
+                                if (tapNote.centerTime >= 5) {
                                     // miss
                                     gamePage.game.currentCombo = 0;
                                     tapNote.fadeOut(canvas);
@@ -130,7 +130,7 @@ class Canvas {
                     soundsManager.flick.play();
                     flickNote.fadeOut(canvas);
                 }
-                if (flickNote.centerTime >= 6) {
+                if (flickNote.centerTime >= 5) {
                     // miss
                     gamePage.game.currentCombo = 0;
                     flickNote.fadeOut(canvas);
@@ -148,7 +148,7 @@ class Canvas {
                     case (distance <= canvas._perfectDistance):
                         if (distance === 0) {
                             // distance == 0 and wait 0.1 seconds(6 frames)
-                            if (dragNote.centerTime >= 6 && dragNote.keyCheck === undefined || dragNote.keyCheck === "miss") {
+                            if (dragNote.centerTime >= 5 && dragNote.keyCheck === undefined || dragNote.keyCheck === "miss") {
                                 // miss
                                 if (!dragNote.isTailVisible()) {
                                     dragNote.fadeOut(canvas);
